@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página inicial">
+    <meta name="author" content="Matheus Augusto Filippi Polinski">
+    <meta name="keywords" content="Músicas, artistas, som">
+    <title>trabalho</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/js.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <ul>
+                    <li class="nav-link">
+                        <a href="#section1"><img src="imagens/logo.png" alt="logo"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#section2">Quem somos?</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#section3">Gêneros</a>
+                        <ul>
+                            <li><a href="#sertanejo">Sertanejo</a></li>
+                            <li><a href="#sertanejo_classico">Sertanejo Clássico</a></li>
+                            <li><a href="#pagode">Pagode</a></li>
+                            <li><a href="#hip_hop/rap">Hip Hop/Rap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#section4">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-container">
+                <img id="login-icon" src="imagens/login.png" alt="Login">
+            </div>
+
+            <div class="login-modal hidden" id="login-modal">
+                <div class="login-content">
+                    <h2 id="form-title">Login</h2>
+                    <form id="auth-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" required>
+                        <div id="repeat-password-container" class="hidden">
+                            <label for="repeat-password">Repetir Senha:</label>
+                            <input type="password" id="repeat-password">
+                        </div>
+                        <button type="submit" id="main-button" class="primary-button">Login</button>
+                        <button type="button" id="toggle-button" class="secondary-button">Registrar-se</button>
+                    </form>
+                    <button id="close-login">Fechar</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+   
+
+    <div class="fundo_inicial" id="section1">
+        <img src="imagens/fundo-inicial.jpg" alt="Imagem de Fundo">
+        <div class="texto-e-linha">
+            <div class="texto-por-cima">
+                <h1>Sound</h1>
+            </div>
+            <div class="texto-por-cima2">
+                <h1>Pulse</h1>
+            </div>
+            <div class="linha-horizontal"></div>
+            <div class="texto-por-cima3">
+                <p>O melhor lugar para descobrir</p>
+                <p>músicas e artistas!</p>
+            </div>
+        </div>
+    </div>
+    <div id="section2"></div>
+    <div class="titulo">
+        <p>Quem somos?</p>
+    </div>
+    <div class="container">
+
+        <div class="texto">
+            <p>Somos um site dedicado a todos que vivem e respiram música. Nascemos da paixão por esse universo vibrante
+                e da vontade de criar um espaço onde artistas, fãs e curiosos possam se encontrar e se inspirar. Aqui,
+                exploramos todos os estilos musicais, trazendo conteúdos exclusivos, notícias, análises, e histórias que
+                conectam pessoas pela música. Nosso objetivo é ser um ponto de referência para quem busca descobrir
+                novos talentos, reviver clássicos e entender as tendências que movimentam o cenário musical. </p>
+            <br>
+            <p> Seja você um ouvinte assíduo, um músico em busca de inspiração, ou alguém que simplesmente ama o som,
+                estamos aqui
+                para compartilhar essa jornada com você. Juntos, celebramos a música em todas as suas formas!</p>
+        </div>
+        <div class="imagem">
+            <img src="imagens/nota.png" alt="nota">
+        </div>
+    </div>
+    <div class="wrapper" id="section3">
+        <div class="card">
+            <div class="image-box">
+                <img src="imagens/jorge-e-mateus.jfif" alt="jorge-e-mateus">
+            </div>
+            <div class="content">
+                <h1>Sertanejo</h1>
+                <p>O sertanejo atual é um dos gêneros musicais mais populares no Brasil, caracterizado pela mistura de
+                    influências modernas com tradições rurais. Ele se divide principalmente entre o "Sertanejo
+                    Universitário", que é mais pop e voltado para o público jovem, e o "Sertanejo Sofrência", que foca
+                    em temas de amor e desilusão. Artistas como Gusttavo Lima, Marília Mendonça e Jorge & Mateus estão
+                    no auge, trazendo uma sonoridade que incorpora elementos de funk, eletrônico e até hip-hop, além dos
+                    tradicionais instrumentos sertanejos. O gênero continua a evoluir, mantendo uma ampla base de fãs e
+                    forte presença nas paradas musicais e nas mídias sociais.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="imagens/zezedicamargoeluciano.webp" alt="zezedicamargoeluciano">
+            </div>
+            <div class="content">
+                <h1>Sertanejo Clássico</h1>
+                <p>O sertanejo clássico, ou "sertanejo raiz", é a forma tradicional do gênero, que surgiu nas décadas de
+                    1920 e 1930 no Brasil. É caracterizado pelo uso de instrumentos como a viola caipira e a sanfona,
+                    que criam uma sonoridade autêntica do interior. As letras frequentemente retratam a vida no campo,
+                    explorando temas como o cotidiano rural, o amor e os valores tradicionais. Artistas pioneiros como
+                    Tonico & Tinoco e Luiz Gonzaga são ícones desse estilo, que enfatiza a cultura e as histórias da
+                    vida rural brasileira. Esse gênero é a base sobre a qual o sertanejo moderno foi desenvolvido,
+                    mantendo uma forte conexão com as raízes culturais do país.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="imagens/seu-jorge.webp" alt="seu-jorge">
+            </div>
+            <div class="content">
+                <h1>Pagode</h1>
+                <p>O pagode é um subgênero do samba que emergiu no Brasil no final da década de 1980. Caracterizado por
+                    um ritmo mais leve e festivo, o pagode é conhecido por sua batida envolvente e suas letras que
+                    frequentemente falam de relacionamentos, festas e cotidiano. O estilo incorpora instrumentos como o
+                    cavaquinho, o tantã e o pandeiro, além de ter uma abordagem mais descontraída e dançante em
+                    comparação com o samba tradicional.
+
+                    Artistas como Exaltasamba, Só Pra Contrariar e Raça Negra foram pioneiros do pagode, ajudando a
+                    popularizar o gênero em todo o Brasil. O pagode evoluiu ao longo dos anos, mantendo sua popularidade
+                    com a adição de elementos de outros estilos musicais e influências contemporâneas. A essência do
+                    pagode continua sendo a celebração da vida e das emoções através da música, mantendo uma forte
+                    presença em festas e eventos sociais.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="imagens/baco.webp" alt="baco">
+            </div>
+            <div class="content">
+                <h1>Hip Hop/Rap</h1>
+                <p>No Brasil, o hip hop e o rap têm se destacado pela inovação e diversidade, refletindo a realidade
+                    urbana e a cultura local. A cena contemporânea é marcada por artistas que trazem novas abordagens e
+                    misturas de estilos. Pele Milflows é conhecido por suas letras introspectivas e poéticas, explorando
+                    temas pessoais e sociais com profundidade. Baco Exu do Blues, por sua vez, mistura rap com elementos
+                    de música alternativa, criando um som único que combina crítica social e emoções intensas. O grupo
+                    1Kilo, com sua abordagem colaborativa, aborda a vida nas periferias e as realidades urbanas,
+                    mantendo uma forte conexão com o rap tradicional, mas com uma perspectiva moderna.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sertanejo"></div>
+    <div class="titulo_generos">
+        <p>Sertanejo</p>
+    </div>
+
+    <div class="lista-musicas">
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">1</div>
+                <div class="nome-musica">Sosseguei</div>
+                <div class="artista">Jorge & Mateus</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1xFgXCY8Zvo76gHg4RgUaU?si=1293c414841c44ee', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">2</div>
+                <div class="nome-musica">Te Amo À Beça</div>
+                <div class="artista">Matheus & Kauan</div>
+                <div class="botao-play"
+                    onclick="window.open('hhttps://open.spotify.com/intl-pt/track/3XsUjTT0uMpP50jzH1qnzI?si=2cc4c32fc5684496', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">3</div>
+                <div class="nome-musica">Tinha Que Ser Eu</div>
+                <div class="artista">Matheus & Kauan</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/0AS9gDeZ1HZXyCBsrhRIl4?si=1c999ae11b31426c', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">4</div>
+                <div class="nome-musica">Calma</div>
+                <div class="artista">Jorge & Mateus</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/7evftBiobEwWOwfxiTnnKc?si=5163fbf321cf4ec0', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">5</div>
+                <div class="nome-musica">Moça Do Espelho</div>
+                <div class="artista">Zé Neto & Cristiano</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/2nMLXtXdcp2BkwPoZzse3C?si=ec619ded546d40f5', '_blank')">
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">6</div>
+                <div class="nome-musica">5 Km</div>
+                <div class="artista">Henrique & Juliano</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/10M1koRXx1iKAR67VW2CxE?si=28d9b88575024c4c', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">7</div>
+                <div class="nome-musica">Incondicional</div>
+                <div class="artista">Luan Santana</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/13UY9fXJBE32mR6GUhYIfO?si=d4e51eaa65a14e67', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">8</div>
+                <div class="nome-musica">A Gente Nem Ficou</div>
+                <div class="artista">Jorge & Mateus</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/6djeEIRRv8oNqXDZf3fxTj?si=76035a4c8bf548c1', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">9</div>
+                <div class="nome-musica">Cidade Vizinha</div>
+                <div class="artista">Henrique & Juliano</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1pjpPXl66t4FeQaFscpG73?si=9201f2f254394547', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">10</div>
+                <div class="nome-musica">Entregador De Flor</div>
+                <div class="artista">Diego & Victor Hugo</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/38MiIYlhGASln9jXnOmX04?si=131cfb34e31a4253', '_blank')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sertanejo_classico"></div>
+    <div class="titulo_generos">
+        <p>Sertanejo Clássico</p>
+    </div>
+
+    <div class="lista-musicas">
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">1</div>
+                <div class="nome-musica">Dois Corações E Uma História</div>
+                <div class="artista">Zezé Di Camargo & Luciano</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/5XRUIRvX0BTzuBDtxMCZZ9?si=940ff112b99e4282', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">2</div>
+                <div class="nome-musica">Nos Bares Da Cidade</div>
+                <div class="artista">Rick & Renner</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/5qslhzCZvSUYNPQ4lAU0mz?si=2306c82f52774dd1', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">3</div>
+                <div class="nome-musica">Som De Cristal</div>
+                <div class="artista">Joaquim & Manuel</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/7dlAQAbhZeYqoK50JsnAiG?si=5bf7bf9146574610', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">4</div>
+                <div class="nome-musica">Assino Com X</div>
+                <div class="artista">Gilberto & Gilmar</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/5ToUsvN8OZUPMWrP79tvNH?si=0f839e233a7e4251', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">5</div>
+                <div class="nome-musica">Você Vai Vêr</div>
+                <div class="artista">Zezé Di Camargo & Luciano</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/0jwGxgupGo2ovlU5eonF9D?si=c4a2d79cadcb4984', '_blank')">
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">6</div>
+                <div class="nome-musica">Blusa Vermelha</div>
+                <div class="artista">Trio Parada Dura</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1RuqQzROKXE5Kmkzi5TVUD?si=3580efb82b8a4d9c', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">7</div>
+                <div class="nome-musica">Bijuteria</div>
+                <div class="artista">Bruno & Marrone</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/0zzpzBd9xxzGL9cBpLWsoy?si=25a75cde3b114da5', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">8</div>
+                <div class="nome-musica">Um Sonhador</div>
+                <div class="artista">Leandro & Leonardo</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/45fbbFkcoQ02ffNbqzC35H?si=0a126dfd94914f85', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">9</div>
+                <div class="nome-musica">A Carta</div>
+                <div class="artista">Milionário & José Rico</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/14XJE5ZWCBYmkPkT4G3w96?si=4f940bd194844de2', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">10</div>
+                <div class="nome-musica">Convite De Casamento</div>
+                <div class="artista">Gian & Giovani</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/7xk1Cm7f9gVYUdbAnwoFpy?si=761227b9034945ea', '_blank')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pagode"></div>
+    <div class="titulo_generos">
+        <p>Pagode</p>
+    </div>
+
+    <div class="lista-musicas">
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">1</div>
+                <div class="nome-musica">Deixa Alagar</div>
+                <div class="artista">Grupo Revelação</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/2gChdW50WOzAYsK3P5JJot?si=faf2ecb861ee4567', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">2</div>
+                <div class="nome-musica">Por Tão Pouco</div>
+                <div class="artista">Grupo Menos É Mais</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/6UV2ISfKVLSam3ehPe8ej6?si=0d3ddfe84f704692', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">3</div>
+                <div class="nome-musica">Melhor Eu Ir/Ligando Os Fatos</div>
+                <div class="artista">Grupo Menos É Mais, Di Propósito</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/5r9CZJMoMmxio2AnJdxuDS?si=2c575819490c43b0', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">4</div>
+                <div class="nome-musica">Selinho</div>
+                <div class="artista">Turma Do Pagode</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/0YLGVyCF5sTE116lnGYSB8?si=c3b76eefb67d4144', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">5</div>
+                <div class="nome-musica">Até Que Enfim</div>
+                <div class="artista">Ferrugem</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1zI3RU0boCVsAXChjCvESu?si=747f33d639f5439d', '_blank')">
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">6</div>
+                <div class="nome-musica">Me Apaixonei Pela Pessoa Errada</div>
+                <div class="artista">Exaltasamba</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/02zFCfzkqFwNaZ4f0idBbi?si=790283a6435f430b', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">7</div>
+                <div class="nome-musica">Cobertor De Orelha</div>
+                <div class="artista">Turma Do Pagode</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1XCKlzIqaehohdUTihetGN?si=66a46c5354994281', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">8</div>
+                <div class="nome-musica">Mina Feia</div>
+                <div class="artista">Seu Jorge</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/76AzL7cYrwosKGDw962iVW?si=f1f38abe75a74851', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">9</div>
+                <div class="nome-musica">Vai Me Dando Corda</div>
+                <div class="artista">Grupo Menos É Mais, Di Propósito</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/4rGZaAoBrEvfLGMDZapBKL?si=fd1f28755d81489d', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">10</div>
+                <div class="nome-musica">A Pessoa Certa</div>
+                <div class="artista">Turma Do Pagode</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/5wcuXZAk6wgs326KIMzE6T?si=5d239c382dc04770', '_blank')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hip_hop/rap"></div>
+    <div class="titulo_generos">
+        <p>Hip Hop/Rap</p>
+    </div>
+
+    <div class="lista-musicas">
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">1</div>
+                <div class="nome-musica">Vem Cá</div>
+                <div class="artista">Altamira, PeléMilFlows</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/6hiKXxS7pgPKnKfCU7UJ6O?si=4ec5d19bdc5a44e3', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">2</div>
+                <div class="nome-musica">A Droga Do Amor</div>
+                <div class="artista">Ari, Felipe Play, Dom R, Tiankris</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/6WlyTsLonLLiKYigIANVA4?si=8538898f9e57469e', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">3</div>
+                <div class="nome-musica">Te Amar Demais</div>
+                <div class="artista">Sodré</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/70maGr0lQYDj0tcpcA2ORM?si=7b1e9b08bba048e2', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">4</div>
+                <div class="nome-musica">Me Desculpa Jay Z</div>
+                <div class="artista">Baco Exu Do Blues</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/2BF6mQdYAkLmeRQmX7YyPy?si=da129d758cf4470a', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">5</div>
+                <div class="nome-musica">Deixe-me Ir</div>
+                <div class="artista">1Kilo, Knust, Baviera</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/2srL4DYBekshpbprS6H0mO?si=96cfac7b587a44cf', '_blank')">
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <div class="musica">
+                <div class="numero">6</div>
+                <div class="nome-musica">O Vagabundo E A Dama</div>
+                <div class="artista">Oriente</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/7MQJYm0QPF2Vf0UtzKapSc?si=88996e65e6334706', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">7</div>
+                <div class="nome-musica">Sunshine</div>
+                <div class="artista">Delacruz</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/1UVquahdeg6mRYDTHFKRx0?si=81132399ff13442f', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">8</div>
+                <div class="nome-musica">Pras Damas</div>
+                <div class="artista">Oriente</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/episode/264e7iBb44uUL5C2wLlvZl?si=5c4ab12852c64206', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">9</div>
+                <div class="nome-musica">Girassóis De Van Gogh</div>
+                <div class="artista">Baco Exu Do Blues</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/3baOycIMQ6LRDU9vK5uvSH?si=347ca0debefd441a', '_blank')">
+                </div>
+            </div>
+            <div class="musica">
+                <div class="numero">10</div>
+                <div class="nome-musica">Hoje Sou Eu Que Não Mais Te Quero</div>
+                <div class="artista">Charlie Brown Jr.</div>
+                <div class="botao-play"
+                    onclick="window.open('https://open.spotify.com/intl-pt/track/0vgmsxgWglYs52xNkW5Tkh?si=362ffe8330e6441a', '_blank')">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="section4">
+        <div class="copyright">
+            <p>&copy; 2024 SoundPulse, todos os direitos reservados</p>
+        </div>
+        <div class="contact-icons">
+            <a href="https://github.com/MathiasAFP" target="_blank">
+                <img src="imagens/github.png" alt="Github">
+            </a>
+            <a href="https://wa.me/49999384275/?text=urlencodedtex" target="_blank">
+                <img src="imagens/whatsapp.png" alt="Whatsapp">
+            </a>
+            <a href="https://www.instagram.com/matheus_filippi_/" target="_blank">
+                <img src="imagens/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="image-right">
+            <img src="imagens/logo-ifc.png" alt="Logo">
+        </div>
+    </footer>
+</body>
+
+</html>
